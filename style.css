@@ -10,6 +10,14 @@ body {
   overflow: hidden;
 }
 
+.clock {
+  margin-left: 1rem;
+}
+
+.status {
+  margin-right: 1rem;
+}
+
 .calculator {
   background: black;
   border-radius: 3.1rem;
