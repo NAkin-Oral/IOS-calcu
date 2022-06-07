@@ -68,7 +68,7 @@ const handleNumberClick = numStr => {
   }
 };
 
-const getResultOfOperationAsStr = () => {
+const getResultOfOperationStr = () => {
   const currentValueNum = getValueNum();
   const valueNumInMemory = parseFloat(valueStrInMemory);
   let newValueNum;
@@ -92,7 +92,7 @@ const handleOperatorClick = operation => {
     setStrValue('0');
     return;
   }
-  valueStrInMemory = getResultOfOperationAsStr();
+  valueStrInMemory = getResultOfOperationStr();
   operatorInMemory = operation;
   setStrValue('0');
 };
@@ -140,7 +140,7 @@ division.addEventListener('click', () => {
 });
 equal.addEventListener('click', () => {
   if (valueStrInMemory) {
-    setStrValue(getResultOfOperationAsStr());
+    setStrValue(getResultOfOperationStr());
     valueStrInMemory = null;
     operatorInMemory = null;
   }
