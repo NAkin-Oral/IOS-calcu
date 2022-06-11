@@ -42,6 +42,8 @@ body {
   margin-bottom: 1.25rem;
   margin-right: 1.25rem;
   text-align: right;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .buttons-container {
